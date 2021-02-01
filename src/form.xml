@@ -1,0 +1,20 @@
+<form>
+  <collapse accordion="true">
+    <panel title="常规">
+      <input type="dropdown" field="bucket" required="true">
+        <label>分组字段</label>
+        <dataset>fields</dataset>
+      </input>
+      <input type="dropdown" field="metric" required="true">
+        <label>统计指标</label>
+        <dataset>fields</dataset>
+      </input>
+      <input type="radio" field="shape">
+        <label>漏斗形状</label>
+        <initial-value>funnel</initial-value>
+        <choice value="funnel">矩形</choice>
+        <choice value="pyramid">尖角</choice>
+      </input>
+    </panel>
+  </collapse>
+</form>

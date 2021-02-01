@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cp -Rf lib/*.css ../appserver/static/css/
+cp -Rf lib/*.js ../appserver/static/js/
+cd ..
+appname=$(basename `pwd`)
+cd ..
+tar -czvf "${appname}.tar.gz" --exclude="${appname}/develop" $appname
